@@ -22,7 +22,7 @@
     map: {'*':{'css':'lib/require/css.min'}},
     shim: {
         'app': {deps:['wx','swiper','axios','lodash']},
-        'enter': {deps:['css!lib/bootstrap/3.3.7/bootstrap.min','app','css!index']},
+        'enter': {deps:['css!lib/bootstrap/3.3.7/bootstrap.min','app']},
         'swiper': {deps:['css!lib/swiper/4.5.0/swiper.min']}
     }
 })
