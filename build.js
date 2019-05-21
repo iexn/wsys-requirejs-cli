@@ -12,7 +12,7 @@
     removeCombined: true,
     paths: {
         'enter': 'lib/app/enter/swiper',
-        'app': 'lib/app/app',
+        'app': 'empty:',
         'wx': 'lib/wx/1.4.0/wx.min',
         'jquery': 'lib/jquery/2.2.4/jquery.min',
         'swiper': 'lib/swiper/4.5.0/swiper.min',

@@ -1,20 +1,20 @@
 require.config({
     urlArgs: 'v=2019051001',
-    baseUrl: window.baseUrl,
+    baseUrl: window.libUrl,
     paths: {
-        'enter': 'lib/app/enter/swiper',
-        'app': 'lib/app/app',
-        'axios': 'lib/axios/0.18.0/axios.min',
-        'jquery': 'lib/jquery/2.2.4/jquery.min',
-        'lodash': 'lib/lodash/1.8.3/lodash.min',
-        'swiper': 'lib/swiper/4.5.0/swiper.min',
-        'wx': 'lib/wx/1.4.0/wx.min',
+        'enter': 'app/enter/swiper',
+        'app': 'app/app',
+        'axios': 'axios/0.18.0/axios.min',
+        'jquery': 'jquery/2.2.4/jquery.min',
+        'lodash': 'lodash/1.8.3/lodash.min',
+        'swiper': 'swiper/4.5.0/swiper.min',
+        'wx': 'wx/1.4.0/wx.min',
     },
-    map: {'*':{'css': window.baseUrl + '/lib/require/css.min.js'}},
+    map: {'*':{'css': window.libUrl + '/require/css.min.js'}},
     shim: {
         'app': {deps:['wx','swiper','axios','lodash']},
-        'enter': {deps:['css!lib/bootstrap/3.3.7/bootstrap.min','app']},
-        'swiper': {deps:['css!lib/swiper/4.5.0/swiper.min']}
+        'enter': {deps:['css!bootstrap/3.3.7/bootstrap.min','app']},
+        'swiper': {deps:['css!swiper/4.5.0/swiper.min']}
     }
 });
 

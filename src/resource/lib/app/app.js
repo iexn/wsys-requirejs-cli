@@ -96,6 +96,16 @@ define(function (require, exports, module) {
     }
 
     function web2app_url (action, gets, hash, addr) {
+        // tp地址处理方案
+        var s = action;
+        if (type(gets) == 'object') {
+            for (var name in gets) {
+                var value = gets[name];
+                s += '/' + name + '/' + gets['name'];
+            }
+        }
+        return sysinfo.url.path + '?s=' + sysinfo.url.s + s + '&' + sysinfo.url.query;
+        // 微擎地址处理方案
         var local = sysinfo.siteroot + 'app/index.php';
         var url = addr || local;
 
